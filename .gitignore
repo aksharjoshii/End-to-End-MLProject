@@ -1,0 +1,11 @@
+# .gitignore
+
+# Exclude virtual environment
+venv/
+
+# Exclude build artifacts
+build/
+dist/
+
+# Exclude package information
+src.egg-info/
