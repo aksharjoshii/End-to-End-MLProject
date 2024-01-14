@@ -85,11 +85,11 @@ def load_json(path: Path) -> ConfigBox:
 
 
 @ensure_annotations
-def save_bin(object: Any, path: Path):
+def save_bin(object, path:str):
     """save binary file
 
     Args:
-        data (Any): data to be saved as binary
+        object (Any): data to be saved as binary
         path (Path): path to binary file
     """
     joblib.dump(value=object, filename=path)

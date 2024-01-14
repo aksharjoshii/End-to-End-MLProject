@@ -18,7 +18,9 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path : Path
-    transformer_object_dir : Path
+    preprocessor_obj_file_path : str
+    target_column: str
+    
 
 @dataclass(frozen=True)
 class ModeltrainerConfig:

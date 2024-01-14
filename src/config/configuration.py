@@ -30,6 +30,7 @@ class ConfigManager:
         return data_ingestion_config
     
     
+    
     def get_data_validation_config(self) -> DataValidationConfig:
         config = self.config.data_validation 
         schema = self.schema.COLUMNS
@@ -45,18 +46,24 @@ class ConfigManager:
         return data_validation_config
     
     
+    
     def get_data_transformation_config(self) -> DataTransformationConfig:
         config = self.config.data_transformation
+        
+        schema = self.schema.TARGET_COLUMN
         
         create_directories([config.root_dir])
         
         data_transformation_config = DataTransformationConfig(
             root_dir=config.root_dir,
             data_path= config.data_path,
-            transformer_object_dir=config.transformer_object_dir
+            preprocessor_obj_file_path =config.preprocessor_obj_file_path,
+            target_column= schema.name  
         )
         
         return data_transformation_config
+    
+    
     
     def get_model_trainer_config(self) -> ModeltrainerConfig:
         config = self.config.model_trainer

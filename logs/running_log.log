@@ -178,3 +178,291 @@ x==========x]
 [2024-01-13 11:58:50,586: INFO: common: yaml file: schema.yaml loaded successfully]
 [2024-01-13 11:58:50,586: INFO: common: created directory at: artifacts]
 [2024-01-13 11:58:50,592: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 16:46:03,103: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 16:46:03,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 16:46:03,111: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 16:46:03,111: INFO: common: created directory at: artifacts]
+[2024-01-13 16:46:03,120: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 16:46:03,749: INFO: 839230610: save preprocessor object to artifacts/data_transformation/preprocessor.joblib]
+[2024-01-13 16:52:04,082: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 16:52:04,083: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 16:52:04,091: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 16:52:04,091: INFO: common: created directory at: artifacts]
+[2024-01-13 16:52:04,096: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 16:52:04,692: INFO: 4217170276: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 16:53:22,520: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 16:53:22,524: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 16:53:22,527: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 16:53:22,532: INFO: common: created directory at: artifacts]
+[2024-01-13 16:53:22,532: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 16:53:23,142: INFO: 4217170276: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 16:58:45,147: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 16:58:45,150: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 16:58:45,153: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 16:58:45,158: INFO: common: created directory at: artifacts]
+[2024-01-13 16:58:45,158: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 16:58:45,751: INFO: 311359460: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 16:59:36,320: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 16:59:36,324: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 16:59:36,326: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 16:59:36,326: INFO: common: created directory at: artifacts]
+[2024-01-13 16:59:36,334: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 16:59:36,960: INFO: 551391994: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 17:00:34,181: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 17:00:34,184: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 17:00:34,186: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 17:00:34,193: INFO: common: created directory at: artifacts]
+[2024-01-13 17:00:34,193: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 17:00:34,786: INFO: 1867219812: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 17:03:07,178: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 17:03:07,186: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 17:03:07,193: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 17:03:07,194: INFO: common: created directory at: artifacts]
+[2024-01-13 17:03:07,194: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 17:03:07,820: INFO: 1867219812: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 20:43:06,361: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 20:43:06,364: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 20:43:06,367: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 20:43:06,367: INFO: common: created directory at: artifacts]
+[2024-01-13 20:43:06,367: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 20:43:06,659: INFO: 793293800: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 20:43:06,664: INFO: common: binary file saved at: artifacts/data_transformation\preprocessor.joblib]
+[2024-01-13 20:43:06,664: INFO: 793293800: Preprocessed train and test data are saved ]
+[2024-01-13 20:43:06,690: INFO: 793293800: train data shape : (10875, 342)]
+[2024-01-13 20:43:06,691: INFO: 793293800: test data shape : (3626, 342)]
+[2024-01-13 22:36:13,764: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-13 22:36:13,780: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:36:13,780: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:36:13,795: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:36:13,795: INFO: common: created directory at: artifacts]
+[2024-01-13 22:36:13,795: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-13 22:36:13,795: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/nyc_taxi_data.csv']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_02_data_validation.py", line 15, in main
+    data_valid.validate_data_columns()
+  File "D:\ML_Deployment\Automadata\src\components\data_validation.py", line 35, in validate_data_columns
+    raise e
+  File "D:\ML_Deployment\Automadata\src\components\data_validation.py", line 15, in validate_data_columns
+    data = pd.read_csv(self.config.data_path)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/nyc_taxi_data.csv'
+[2024-01-13 22:36:53,090: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-13 22:36:53,090: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:36:53,090: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:36:53,090: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:36:53,090: INFO: common: created directory at: artifacts]
+[2024-01-13 22:36:53,090: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-13 22:36:53,104: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/nyc_taxi_data.csv']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_02_data_validation.py", line 15, in main
+    data_valid.validate_data_columns()
+  File "D:\ML_Deployment\Automadata\src\components\data_validation.py", line 35, in validate_data_columns
+    raise e
+  File "D:\ML_Deployment\Automadata\src\components\data_validation.py", line 15, in validate_data_columns
+    data = pd.read_csv(self.config.data_path)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/nyc_taxi_data.csv'
+[2024-01-13 22:37:56,850: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:37:56,852: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:37:56,855: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:37:56,856: INFO: common: created directory at: artifacts]
+[2024-01-13 22:37:56,857: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:37:56,857: INFO: 3285830496: Exporting data from mongodb]
+[2024-01-13 22:38:05,619: INFO: 3285830496: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:44:42,248: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:44:42,248: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:44:42,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:44:42,248: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:44:42,248: INFO: common: created directory at: artifacts]
+[2024-01-13 22:44:42,248: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:44:42,248: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:44:51,002: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:44:51,002: ERROR: main: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv']
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.export_data_into_feature_store_file_path()
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 85, in export_data_into_feature_store_file_path
+    raise e
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 78, in export_data_into_feature_store_file_path
+    taxi_data.to_csv(feature_store_file_path,index=False)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\core\generic.py", line 3772, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\format.py", line 1186, in to_csv
+    csv_formatter.save()
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\csvs.py", line 240, in save
+    with get_handle(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv'
+[2024-01-13 22:46:56,705: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:46:56,705: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:46:56,705: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:46:56,721: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:46:56,721: INFO: common: created directory at: artifacts]
+[2024-01-13 22:46:56,721: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:46:56,721: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:47:06,450: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:47:06,450: ERROR: main: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv']
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.export_data_into_feature_store_file_path()
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 85, in export_data_into_feature_store_file_path
+    raise e
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 78, in export_data_into_feature_store_file_path
+    taxi_data.to_csv(feature_store_file_path,index=False)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\core\generic.py", line 3772, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\format.py", line 1186, in to_csv
+    csv_formatter.save()
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\csvs.py", line 240, in save
+    with get_handle(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv'
+[2024-01-13 22:52:37,464: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:52:37,464: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:52:37,464: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:52:37,464: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:52:37,464: INFO: common: created directory at: artifacts]
+[2024-01-13 22:52:37,464: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:52:37,464: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:52:47,336: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:52:47,336: ERROR: main: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv']
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.export_data_into_feature_store_file_path()
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 85, in export_data_into_feature_store_file_path
+    raise e
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 78, in export_data_into_feature_store_file_path
+    taxi_data.to_csv(feature_store_file_path,index=False, index_label=False)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\core\generic.py", line 3772, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\format.py", line 1186, in to_csv
+    csv_formatter.save()
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\csvs.py", line 240, in save
+    with get_handle(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv'
+[2024-01-13 22:53:29,942: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:53:29,942: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:53:29,942: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:53:29,942: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:53:29,942: INFO: common: created directory at: artifacts]
+[2024-01-13 22:53:29,942: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:53:29,942: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:53:38,160: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:53:38,160: ERROR: main: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv']
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.export_data_into_feature_store_file_path()
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 85, in export_data_into_feature_store_file_path
+    raise e
+  File "D:\ML_Deployment\Automadata\src\components\data_ingestion.py", line 78, in export_data_into_feature_store_file_path
+    taxi_data.to_csv(feature_store_file_path,index=False, index_label=False)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\core\generic.py", line 3772, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\format.py", line 1186, in to_csv
+    csv_formatter.save()
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\formats\csvs.py", line 240, in save
+    with get_handle(
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: 'artifacts/data_ingestion\\nyc_taxi_data.csv'
+[2024-01-13 22:57:14,642: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:57:14,644: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:57:14,645: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:57:14,647: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:57:14,647: INFO: common: created directory at: artifacts]
+[2024-01-13 22:57:14,648: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:57:14,648: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:57:23,496: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:57:23,612: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-13 22:57:41,466: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:57:41,469: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:57:41,469: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:57:41,471: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:57:41,472: INFO: common: created directory at: artifacts]
+[2024-01-13 22:57:41,472: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:57:41,472: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:57:49,626: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:57:49,730: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-13 22:58:28,040: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:58:28,042: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:58:28,043: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:58:28,045: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:58:28,046: INFO: common: created directory at: artifacts]
+[2024-01-13 22:58:28,046: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:58:28,046: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:58:38,098: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:58:38,246: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-13 22:59:26,599: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-13 22:59:26,602: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:59:26,603: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:59:26,605: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:59:26,605: INFO: common: created directory at: artifacts]
+[2024-01-13 22:59:26,605: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-13 22:59:26,606: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-13 22:59:35,409: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-13 22:59:35,531: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-13 22:59:35,531: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-13 22:59:35,531: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:59:35,531: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:59:35,531: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:59:35,531: INFO: common: created directory at: artifacts]
+[2024-01-13 22:59:35,531: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-13 22:59:35,594: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-13 22:59:35,595: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-13 22:59:35,597: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-13 22:59:35,598: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-13 22:59:35,599: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-13 22:59:35,599: INFO: common: created directory at: artifacts]
+[2024-01-13 22:59:35,599: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-13 22:59:35,866: INFO: data_transformation: save preprocessor object to artifacts/data_transformation]
+[2024-01-13 22:59:35,878: INFO: common: binary file saved at: artifacts/data_transformation\preprocessor.joblib]
+[2024-01-13 22:59:35,892: INFO: data_transformation: Preprocessed train and test data are saved ]
+[2024-01-13 22:59:35,892: INFO: data_transformation: train data shape : (10875, 342)]
+[2024-01-13 22:59:35,892: INFO: data_transformation: test data shape : (3626, 342)]
+[2024-01-13 22:59:35,902: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]

@@ -74,7 +74,10 @@ class DataIngestion:
             logger.info(f"Saving exported data into feature store file path: {raw_file_path}")
         
             feature_store_file_path = os.path.join(raw_file_path,'nyc_taxi_data.csv')
-            taxi_data.to_csv(feature_store_file_path,index=False)
+            # Correct the above line to create the directory as well
+            os.makedirs(os.path.dirname(feature_store_file_path), exist_ok=True)
+            
+            taxi_data.to_csv(feature_store_file_path,index=False, index_label=False)
            
 
             return feature_store_file_path
