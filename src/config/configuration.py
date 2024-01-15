@@ -65,22 +65,20 @@ class ConfigManager:
     
     
     
-    def get_model_trainer_config(self) -> ModeltrainerConfig:
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
-        params = self.params.XGBoost
-        schema = self.schema.TARGET
         
+        model_param_grid = self.params.get('search_grid', {})
+    
+
         create_directories([config.root_dir])
-        
-        model_trainer_config = ModeltrainerConfig(
+
+        model_trainer_config = ModelTrainerConfig(
             root_dir=config.root_dir,
-            train_data_path = config.train_data_path,
-            test_data_path = config.test_data_path,
-            model_name = config.model_name,
-            #TO_DO: params for xgboost
-            target_column= schema.name    
+            train_data_path=config.train_data_path,
+            model_param_grid =model_param_grid
         )
-        
+
         return model_trainer_config
     
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:

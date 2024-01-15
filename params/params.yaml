@@ -1,0 +1,26 @@
+search_grid:
+  learning_rate:
+    - 0.3
+    - 0.1
+    - 0.01
+
+  max_depth:
+    - 3
+    - 5
+    - 7
+
+  n_estimators:
+    - 100
+    - 200
+    - 300
+
+  subsample:
+    - 0.7
+
+  colsample_bytree:
+    - 0.7
+
+  objective:
+    - binary:logistic
+
+  

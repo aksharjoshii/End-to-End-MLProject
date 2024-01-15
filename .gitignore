@@ -2,7 +2,7 @@
 
 # Exclude virtual environment
 venv/
-
+notebook /
 # Exclude build artifacts
 build/
 dist/

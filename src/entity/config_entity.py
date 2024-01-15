@@ -21,14 +21,11 @@ class DataTransformationConfig:
     preprocessor_obj_file_path : str
     target_column: str
     
-
 @dataclass(frozen=True)
-class ModeltrainerConfig:
+class ModelTrainerConfig:
     root_dir: Path
-    test_data_path: Path
-    model_path: Path
-    params: dict
-    target_column : str
+    train_data_path: Path
+    model_param_grid: dict 
 
 @dataclass(frozen=True)
 class ModelEvaluationConfig:
