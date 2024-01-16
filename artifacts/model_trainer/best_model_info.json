@@ -1,1 +1,1 @@
-{"best_params": {"colsample_bytree": 0.7, "learning_rate": 0.01, "max_depth": 3, "n_estimators": 100, "objective": "binary:logistic", "subsample": 0.7}, "f1_score": 0.741748978959243}
+{"best_params": {"colsample_bytree": 0.7, "learning_rate": 0.3, "max_depth": 7, "n_estimators": 300, "objective": "binary:logistic", "subsample": 0.7}, "f1_score": 0.7875001188675332}

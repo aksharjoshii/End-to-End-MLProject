@@ -31,4 +31,4 @@ model_evaluation:
   test_data_path: artifacts/data_transformation/test.npy
   model_path: artifacts/model_trainer/model.joblib
   metric_file_name: artifacts/model_evaluation/metrics.json
-  
+

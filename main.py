@@ -6,37 +6,37 @@ from src.pipeline.stage_04_model_training import ModelTrainerTrainingPipeline
 from src.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 
 
-STAGE_NAME = "Data Ingestion stage"
-try:
-   logger.info(f">>>>>> {STAGE_NAME} started <<<<<<") 
-   data_ingestion = DataIngestionPipeline()
-   data_ingestion.main()
-   logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
-        logger.exception(e)
-        raise e
+# STAGE_NAME = "Data Ingestion stage"
+# try:
+#    logger.info(f">>>>>> {STAGE_NAME} started <<<<<<") 
+#    data_ingestion = DataIngestionPipeline()
+#    data_ingestion.main()
+#    logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
+# except Exception as e:
+#         logger.exception(e)
+#         raise e
 
 
-STAGE_NAME = "Data Validation stage"
-try:
-   logger.info(f">>>>>> {STAGE_NAME} started <<<<<<") 
-   data_ingestion = DataValidationTrainingPipeline()
-   data_ingestion.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
-        logger.exception(e)
-        raise e
+# STAGE_NAME = "Data Validation stage"
+# try:
+#    logger.info(f">>>>>> {STAGE_NAME} started <<<<<<") 
+#    data_ingestion = DataValidationTrainingPipeline()
+#    data_ingestion.main()
+#    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+# except Exception as e:
+#         logger.exception(e)
+#         raise e
 
 
-STAGE_NAME = "Data Transformation stage"
-try:
-   logger.info(f">>>>>> {STAGE_NAME} started <<<<<<") 
-   data_ingestion = DataTransformationTrainingPipeline()
-   data_ingestion.main()
-   logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
-        logger.exception(e)
-        raise e
+# STAGE_NAME = "Data Transformation stage"
+# try:
+#    logger.info(f">>>>>> {STAGE_NAME} started <<<<<<") 
+#    data_ingestion = DataTransformationTrainingPipeline()
+#    data_ingestion.main()
+#    logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
+# except Exception as e:
+#         logger.exception(e)
+#         raise e
      
      
 STAGE_NAME = "Model Trainer stage"

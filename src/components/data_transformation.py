@@ -95,7 +95,6 @@ class DataTransformation:
         data = pd.read_csv(self.config.data_path)
         data_clean =self.generate_features(data)
         data_clean.dropna(inplace=True)
-        column_names = data_clean.columns
         # split train and test data and save it as artifact 
         train, test = train_test_split(data_clean, test_size=0.25, random_state=0)
         train_x = train.drop([self.config.target_column], axis=1)

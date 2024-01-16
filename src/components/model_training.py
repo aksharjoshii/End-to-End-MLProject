@@ -6,6 +6,7 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import GridSearchCV
 from src.entity.config_entity import ModelTrainerConfig
 from src.utils.common import save_bin
+import joblib
 
 class ModelTrainer:
     def __init__(self, config:ModelTrainerConfig):
@@ -26,17 +27,20 @@ class ModelTrainer:
         xgb_params = {
             'tree_method': 'gpu_hist',  
             'gpu_id': 0,  
+            'random_state':42
         }
         xgb_clf = XGBClassifier(**xgb_params)
-        grid_search = GridSearchCV(estimator=xgb_clf, param_grid=self.config.model_param_grid , scoring='f1', cv=5, n_jobs=-1, verbose=1)
+        grid_search = GridSearchCV(estimator=xgb_clf, param_grid=self.config.model_param_grid , scoring='f1', cv=5, n_jobs=-1, verbose=3)
         grid_search.fit(X_train, y_train)
-        best_estimator = grid_search.best_estimator_
+        best_params  = grid_search.best_params_
+        tuned_model = XGBClassifier(**best_params, random_state=42)
+        tuned_model.fit(X_train, y_train)
 
-
-        self.model_info['best_params'] = grid_search.best_params_
+        self.model_info['best_params'] = best_params
         self.model_info['f1_score'] = grid_search.best_score_
 
         with open(os.path.join(self.config.root_dir, 'best_model_info.json'), 'w') as f:
             json.dump(self.model_info, f)
-
-        save_bin(best_estimator, path=os.path.join(self.config.root_dir, 'model.joblib'))
+        
+        joblib.dump(tuned_model,os.path.join(self.config.root_dir, 'clf_model.joblib'))
+        
