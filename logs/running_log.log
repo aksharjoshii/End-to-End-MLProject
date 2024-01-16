@@ -639,3 +639,180 @@ x==========x]
 [2024-01-15 12:22:53,455: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
 
 x==========x]
+[2024-01-15 16:32:49,381: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:32:49,438: INFO: common: created directory at: artifacts]
+[2024-01-15 16:32:49,438: INFO: common: created directory at: artifacts]
+[2024-01-15 16:39:29,332: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:39:29,334: INFO: common: created directory at: artifacts]
+[2024-01-15 16:39:29,336: INFO: common: created directory at: artifacts]
+[2024-01-15 16:42:13,636: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:42:13,638: INFO: common: created directory at: artifacts]
+[2024-01-15 16:42:13,640: INFO: common: created directory at: artifacts]
+[2024-01-15 16:48:23,234: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:48:23,237: INFO: common: created directory at: artifacts]
+[2024-01-15 16:48:23,238: INFO: common: created directory at: artifacts]
+[2024-01-15 16:48:59,725: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:48:59,728: INFO: common: created directory at: artifacts]
+[2024-01-15 16:48:59,729: INFO: common: created directory at: artifacts]
+[2024-01-15 16:50:18,071: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:50:18,075: INFO: common: created directory at: artifacts]
+[2024-01-15 16:54:12,752: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:54:12,756: INFO: common: created directory at: artifacts]
+[2024-01-15 16:55:33,150: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 16:55:33,152: INFO: common: created directory at: artifacts]
+[2024-01-15 16:55:33,155: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-15 16:55:34,925: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-01-15 17:37:18,882: INFO: main: >>>>>> Model Evaluation started <<<<<<]
+[2024-01-15 17:37:18,882: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 17:37:18,882: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-15 17:37:18,897: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-15 17:37:18,897: INFO: common: created directory at: artifacts]
+[2024-01-15 17:37:18,897: ERROR: main: "'ConfigBox' object has no attribute 'xgboost'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'XGBoost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'XGBoost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'XGBoost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'XGBoost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_05_model_evaluation.py", line 14, in main
+    model_eval_config = config.get_model_evaluation_config()
+  File "D:\ML_Deployment\Automadata\src\config\configuration.py", line 86, in get_model_evaluation_config
+    params = self.params.XGBoost
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'xgboost'"
+[2024-01-15 17:38:49,217: INFO: main: >>>>>> Model Evaluation started <<<<<<]
+[2024-01-15 17:38:49,217: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 17:38:49,217: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-15 17:38:49,230: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-15 17:38:49,230: INFO: common: created directory at: artifacts]
+[2024-01-15 17:38:49,230: ERROR: main: "'ConfigBox' object has no attribute 'xgboost'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'XGBoost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'XGBoost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'XGBoost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'XGBoost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'xgboost'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_05_model_evaluation.py", line 14, in main
+    model_eval_config = config.get_model_evaluation_config()
+  File "D:\ML_Deployment\Automadata\src\config\configuration.py", line 86, in get_model_evaluation_config
+    params = self.params.XGBoost
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'xgboost'"
+[2024-01-15 17:43:43,404: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 17:43:43,407: INFO: common: created directory at: artifacts]
+[2024-01-15 17:43:43,407: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-15 17:46:08,874: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 17:46:08,874: INFO: common: created directory at: artifacts]
+[2024-01-15 17:46:08,882: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-15 17:46:09,817: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-01-15 17:48:42,405: INFO: main: >>>>>> Model Evaluation started <<<<<<]
+[2024-01-15 17:48:42,405: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 17:48:42,417: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-15 17:48:42,425: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-15 17:48:42,426: INFO: common: created directory at: artifacts]
+[2024-01-15 17:48:42,426: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-15 17:48:43,692: ERROR: main: type tuple doesn't define __round__ method]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_eval_config.save_eval_metrics()
+  File "D:\ML_Deployment\Automadata\src\components\model_evaluation.py", line 32, in save_eval_metrics
+    "accuracy_score": round(accuracy, 4),
+TypeError: type tuple doesn't define __round__ method
+[2024-01-15 18:10:06,895: INFO: main: >>>>>> Model Evaluation started <<<<<<]
+[2024-01-15 18:10:06,895: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-15 18:10:06,895: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-15 18:10:06,903: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-15 18:10:06,903: INFO: common: created directory at: artifacts]
+[2024-01-15 18:10:06,903: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-15 18:10:07,957: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2024-01-15 18:10:07,957: INFO: main: >>>>>> stage Model Evaluation completed <<<<<<
+
+x==========x]
