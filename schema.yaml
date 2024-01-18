@@ -3,23 +3,12 @@ COLUMNS:
   tpep_pickup_datetime: object
   tpep_dropoff_datetime: object
   passenger_count: int64
-  trip_distance: float64
   RatecodeID: int64
-  store_and_fwd_flag: object
   PULocationID: int64
   DOLocationID: int64
-  payment_type: int64
-  fare_amount: float64
-  extra: float64
-  mta_tax: float64
-  tip_amount: float64
-  tolls_amount: float64
-  improvement_surcharge: float64
-  total_amount: float64
   mean_duration: float64
   mean_distance: float64
   predicted_fare: float64
-  tip_percent: float64
   generous: int64
   
 

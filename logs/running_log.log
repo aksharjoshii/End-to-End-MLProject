@@ -963,3 +963,63 @@ x==========x]
 [2024-01-16 19:54:31,084: INFO: main: >>>>>> stage Model Evaluation completed <<<<<<
 
 x==========x]
+[2024-01-17 12:40:31,345: INFO: main: >>>>>> Data Ingestion stage started <<<<<<]
+[2024-01-17 12:40:31,345: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 12:40:31,360: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-17 12:40:31,360: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-17 12:40:31,360: INFO: common: created directory at: artifacts]
+[2024-01-17 12:40:31,360: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-17 12:40:31,360: INFO: data_ingestion: Exporting data from mongodb]
+[2024-01-17 12:40:39,912: INFO: data_ingestion: Saving exported data into feature store file path: artifacts/data_ingestion]
+[2024-01-17 12:40:39,975: INFO: main: >>>>>> Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-17 12:40:39,976: INFO: main: >>>>>> Data Validation stage started <<<<<<]
+[2024-01-17 12:40:39,978: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 12:40:39,979: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-17 12:40:39,981: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-17 12:40:39,981: INFO: common: created directory at: artifacts]
+[2024-01-17 12:40:39,981: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-17 12:40:40,011: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-17 12:40:40,011: INFO: main: >>>>>> Data Transformation stage started <<<<<<]
+[2024-01-17 12:40:40,012: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 12:40:40,012: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-17 12:40:40,012: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-17 12:40:40,012: INFO: common: created directory at: artifacts]
+[2024-01-17 12:40:40,012: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-17 12:40:40,273: INFO: data_transformation: save preprocessor object to artifacts/data_transformation]
+[2024-01-17 12:40:40,273: INFO: common: binary file saved at: artifacts/data_transformation\preprocessor.joblib]
+[2024-01-17 12:40:40,303: INFO: data_transformation: Preprocessed train and test data are saved ]
+[2024-01-17 12:40:40,304: INFO: data_transformation: train data shape : (10838, 337)]
+[2024-01-17 12:40:40,304: INFO: data_transformation: test data shape : (3613, 337)]
+[2024-01-17 12:40:40,305: INFO: main: >>>>>> Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-17 12:40:40,305: INFO: main: >>>>>> Model Trainer stage started <<<<<<]
+[2024-01-17 12:40:40,311: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 12:40:40,312: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-17 12:40:40,314: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-17 12:40:40,314: INFO: common: created directory at: artifacts]
+[2024-01-17 12:40:40,314: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-17 12:45:21,066: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2024-01-17 12:45:21,066: INFO: main: >>>>>> Model Evaluation started <<<<<<]
+[2024-01-17 12:45:21,082: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 12:45:21,084: INFO: common: yaml file: params\params.yaml loaded successfully]
+[2024-01-17 12:45:21,086: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-01-17 12:45:21,087: INFO: common: created directory at: artifacts]
+[2024-01-17 12:45:21,087: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-17 12:45:21,097: ERROR: main: [Errno 2] No such file or directory: 'artifacts/model_trainer/model.joblib']
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    data_ingestion.main()
+  File "D:\ML_Deployment\Automadata\src\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_eval_config.save_eval_metrics()
+  File "D:\ML_Deployment\Automadata\src\components\model_evaluation.py", line 26, in save_eval_metrics
+    model = joblib.load(self.config.model_path)
+  File "D:\ML_Deployment\Automadata\venv\lib\site-packages\joblib\numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/model_trainer/model.joblib'

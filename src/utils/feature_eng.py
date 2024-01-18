@@ -22,10 +22,7 @@ def generate_features(input_data: pd.DataFrame) -> pd.DataFrame:
         input_data['night_time'] = input_data['am_rush'].apply(lambda x : 1 if (20 <= x < 24) or (0 <= x < 6) else 0)
 
         # drop redundant columns
-        drop_cols = ['tpep_pickup_datetime', 'tpep_dropoff_datetime',
-                    'payment_type', 'trip_distance', 'store_and_fwd_flag',
-                    'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount',
-                    'improvement_surcharge', 'total_amount', 'tip_percent']
+        drop_cols = ['tpep_pickup_datetime', 'tpep_dropoff_datetime']
         # convert catergorical features to string
         cols_to_str = ['RatecodeID', 'VendorID', 'DOLocationID', 'PULocationID']
 
@@ -36,3 +33,4 @@ def generate_features(input_data: pd.DataFrame) -> pd.DataFrame:
         input_data = input_data.drop(columns=drop_cols, axis=1)
 
         return input_data
+    
